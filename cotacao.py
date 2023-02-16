@@ -4,8 +4,7 @@ import datetime
 
 import requests
 
-sair = False
-while not False:
+while True:
     req = requests.get('http://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL')
     cotacao = json.loads(req.text)
 
